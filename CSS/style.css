@@ -40,8 +40,8 @@ header > div{
 .tasto-blu{
     background-color: rgb(0, 102, 255);
     color: white;
-    padding: 4px 15px;
-    font-size: 14px;
+    padding: 8px 15px;
+    font-size: 10px;
 }
 
 header .tasto-blu{
@@ -51,16 +51,19 @@ header .tasto-blu{
 
 .prima-fascia-blu{
     margin-top: 5vh;
-    background-color: cornflowerblue;
+    background-color: rgb(140, 172, 231);
     /* height: 30vh; */
 }
 
-.prima-fascia-blu h2{
-    /* text-align: center; */
-    padding: 40px 0 20px;
+h2{
+    padding: 30px 0 20px;
 
     /* debug */
     background-color: rgb(255, 0, 238);
+}
+
+.prima-fascia-blu h2{
+    font-size: 40px;
 }
 
 .larghezza-top-bottom{
@@ -71,7 +74,7 @@ header .tasto-blu{
     background-color: rgb(0, 255, 51);
 }
 
-.sc-scritte{
+.prima-fascia-blu .sc-scritte{
     width: 30%;
 
     /* debug */
@@ -86,4 +89,126 @@ p{
 
 .prima-fascia-blu .tasto-blu{
     margin: 50px 0;
+}
+
+
+.fascia-colonne-riga{
+    width: 100%;
+    
+
+    /* debug */
+    /* height: 300px; */
+    background-color: rgb(255, 162, 0);
+}
+
+.larghezza-main{
+    height: 100%;
+    width: 60%;
+    margin-left:20%;
+    /* debug */
+    background-color: rgb(0, 255, 51);
+}
+
+.fatturazione{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.cerchio{
+    border-radius: 50%;
+    border:  1px solid rgb(88, 88, 88);
+    /* background: #000; */
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.cliccato{
+    background: rgb(56, 119, 237);
+}
+
+.spazio-colonne{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.colonna{
+    border: 1px solid grey;
+    width: 30%;
+}
+
+.tipo{
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+
+.colonna .sc-scritte{
+    margin-left: 5%;
+
+    /* debug */
+    /* background-color: rgb(255, 51, 0); */
+}
+
+.prezzo {
+    margin-top: 8px;
+    font-weight: 700s;
+}
+
+.tempo{
+    color: grey;
+    margin-top: 4px;
+}
+
+.dettagli{
+    margin-top: 30px;
+    /* margin-bottom: 35px; */
+}
+
+.dettaglio{
+    display: flex;
+    font-size: 12px;
+    margin-top: 10px;
+    /* margin-top: 2px; */
+
+
+}
+
+.dettaglio i{
+    margin-right: 5px;
+}
+
+
+.colonna section{
+    text-align: center;
+    margin: 30px 0;
+
+    /* debug */
+    background-color: aquamarine;
+}
+
+.acquista-ora{
+    display:flex;
+
+    /* debug */
+    /* background-color: rgb(185, 8, 35); */
+
+}
+.oppure{
+    border-bottom: 1px solid grey;
+    padding: 0 5px 20px;
+}
+
+
+.colonna h5{
+    margin: 30px 0;
+}
+
+.larghezza-main > .colonna{
+    margin-top: 30px;
+    width: 100%;
 }
