@@ -3,3 +3,87 @@
     padding:0;
     box-sizing: border-box;
 }
+
+header{
+    position:fixed;
+    background-color: brown;
+    width: 100vw;
+    height: 5vh;
+    margin-top: -5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasto{
+    height: 5vh;
+    /* max-width: 10%; */
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* debug */
+    
+    background-color: burlywood;
+    border: 1px solid aqua;
+
+}
+
+
+.tasto-blu{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    padding: 4px 15px;
+    font-size: 14px;
+}
+
+header .tasto-blu{
+    margin: 0 10px;
+}
+
+
+.prima-fascia-blu{
+    margin-top: 5vh;
+    background-color: cornflowerblue;
+    /* height: 30vh; */
+}
+
+.prima-fascia-blu h2{
+    /* text-align: center; */
+    padding: 40px 0 20px;
+
+    /* debug */
+    background-color: rgb(255, 0, 238);
+}
+
+.larghezza-top-bottom{
+    height: 100%;
+    width: 70%;
+    margin-left:15%;
+    /* debug */
+    background-color: rgb(0, 255, 51);
+}
+
+.sc-scritte{
+    width: 30%;
+
+    /* debug */
+    background-color: rgb(255, 51, 0);
+}
+
+p{
+    margin: 0 20px 20px 0;
+    font-size: 12px;
+}
+
+
+.prima-fascia-blu .tasto-blu{
+    margin: 50px 0;
+}
