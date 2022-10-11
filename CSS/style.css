@@ -19,29 +19,30 @@ header > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5vh;
 }
 
+
+
+
 .tasto{
-    height: 5vh;
-    /* max-width: 10%; */
-    padding: 0 20px;
+    padding: 8px 15px;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* debug */
-    
-    background-color: burlywood;
-    border: 1px solid aqua;
-
 }
 
 
-.tasto-blu{
-    background-color: rgb(0, 102, 255);
+.blu{
     color: white;
-    padding: 8px 15px;
-    font-size: 10px;
+    background-color: rgb(0, 102, 255);
+}
+
+.bianco{
+    color: grey;
+    background-color: aliceblue;
+    border: 1px solid grey;
 }
 
 header .tasto-blu{
@@ -103,7 +104,7 @@ p{
 
 .larghezza-main{
     height: 100%;
-    width: 60%;
+    width: 60vw;
     margin-left:20%;
     /* debug */
     background-color: rgb(0, 255, 51);
@@ -138,7 +139,9 @@ p{
 
 .colonna{
     border: 1px solid grey;
-    width: 30%;
+    width: 33%;
+    max-width: 250px;
+    
 }
 
 .tipo{
@@ -148,10 +151,12 @@ p{
 
 
 .colonna .sc-scritte{
-    margin-left: 5%;
+    margin: 0 10px;
 
-    /* debug */
-    /* background-color: rgb(255, 51, 0); */
+}
+
+.colonna h4{
+    margin-top: 30px;
 }
 
 .prezzo {
@@ -208,7 +213,217 @@ p{
     margin: 30px 0;
 }
 
+/* questa sarebbe la riga, che ha tutte le caratteristiche di una colonna, ma si distingue perchè non è nel div spazio-colonne */
 .larghezza-main > .colonna{
+    margin: 20px 0;
+    width: 100%;
+    max-width: none;
+    /* questo max-width serve a sovrascrivere la max-width delle altre */
+}
+
+#contatta-ufficio-vendite{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.riga{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    /* background: #000; */
+
+}
+
+.colonna p{
+    width: 70%;
+    color: grey;
+}
+
+
+.fascia-img-scritte{
+    margin-bottom: 20px;
+    
+
+    /* DEBUG */
+    background-color: aquamarine;
+}
+
+
+.fascia-img-scritte .larghezza-main{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#img{
+    width: 70%;
+
+    /* DEBUG */
+    background-color: blueviolet;
+}
+
+
+.fascia-img-scritte .sc-scritte{
+
+    padding: 20px;
+    width:30%;
+    background-color: cadetblue;
+}
+
+
+
+
+.fascia-img-scritte p{
+    color: grey;
+    margin-top: 15px;
+
+
+}
+
+
+.operazione{
+    width:calc(100% / 3);
+    max-width: 250px;
+
+    /* DEBUG */
+    background-color: darksalmon;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.fascia-teams{
+    margin-top:20px;
+}
+
+#teams{
     margin-top: 30px;
+    display:flex;
+    /* DEBUG */
+    background-color: bisque;
+}
+
+.terzo{
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    /* anche l'altezza la esprimo in vw così vengono quadrati*/
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    /* DEBUG */
+    background-color: rgb(223, 131, 20);
+    /* border: 1px solid red; */
+}
+
+.quarto{
+    width: calc(97vw / 6);
+    /* se mettessi 100 andrebbe a capo */
+    height: calc(100vw / 6);
+    
+    /* DEBUG */
+    background-color: rgb(20, 145, 223);
+    border: 1px solid black;
+}
+
+#fascia-blu-2{
+    background-color: cornflowerblue;
     width: 100%;
 }
+
+#fascia-blu-2 .larghezza-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 80px 0;
+}
+
+
+#fascia-faq{
+    background-color: rgb(100, 237, 216);
+    width: 100%;
+}
+
+#fascia-faq .larghezza-main{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 30px;
+    padding: 5px 0;
+}
+
+#fascia-faq h4{
+
+    /* DEBUG */
+    background-color: azure;
+}
+
+
+.domanda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+
+    /* DEBUG */
+    background-color: azure;
+
+}
+
+
+footer{
+
+    margin-top: 20px;
+    background: #000;
+    
+    
+
+    width: 100%;
+
+    /* DEBUG */
+    /* height: 200px; */
+}
+
+footer .larghezza-top-bottom{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.colonna-footer{
+    width: 15%;
+
+    margin-top: 20px;
+
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    /* align-items: top; */
+
+    /* DEBUG */
+    background-color: blueviolet;
+    border: 1px solid white;
+    
+}
+
+.colonna-footer *{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    
+}
+
+
+
+.colonna-footer div{
+    height: 15px;
+    /* margin-top: 10px; */
+    
+}
+
