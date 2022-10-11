@@ -6,7 +6,8 @@
 
 header{
     position:fixed;
-    background-color: brown;
+    background-color: white;
+    padding: 0 20px;
     width: 100vw;
     height: 5vh;
     margin-top: -5vh;
@@ -26,7 +27,7 @@ header > div{
 
 
 .tasto{
-    padding: 8px 15px;
+    padding: 4px 7px;
     font-size: 10px;
     display: flex;
     justify-content: center;
@@ -45,28 +46,6 @@ header > div{
     border: 1px solid grey;
 }
 
-header .tasto-blu{
-    margin: 0 10px;
-}
-
-
-.prima-fascia-blu{
-    margin-top: 5vh;
-    background-color: rgb(140, 172, 231);
-    /* height: 30vh; */
-}
-
-h2{
-    padding: 30px 0 20px;
-
-    /* debug */
-    background-color: rgb(255, 0, 238);
-}
-
-.prima-fascia-blu h2{
-    font-size: 40px;
-}
-
 .larghezza-top-bottom{
     height: 100%;
     width: 70%;
@@ -75,11 +54,33 @@ h2{
     /* background-color: rgb(0, 255, 51); */
 }
 
+
+.prima-fascia-blu{
+    margin-top: 5vh;
+    background-color: rgb(140, 172, 231);
+    height: 610px;
+    
+    box-sizing: border-box;
+    border-bottom: 80px solid white;
+}
+
+h2{
+    padding: 30px 0 20px;
+
+    
+}
+
+
+
+
+.prima-fascia-blu h2{
+    font-size: 60px;
+}
+
+
 .prima-fascia-blu .sc-scritte{
     width: 30%;
 
-    /* debug */
-    background-color: rgb(255, 51, 0);
 }
 
 p{
@@ -87,10 +88,11 @@ p{
     font-size: 12px;
 }
 
-
-.prima-fascia-blu .tasto-blu{
-    margin: 50px 0;
+#jumbo{
+    height:auto;
+    width:70%;
 }
+
 
 
 .fascia-colonne-riga{
@@ -99,7 +101,7 @@ p{
 
     /* debug */
     /* height: 300px; */
-    background-color: rgb(255, 162, 0);
+    /* background-color: rgb(255, 162, 0); */
 }
 
 .larghezza-main{
@@ -127,6 +129,7 @@ p{
 }
 
 .cliccato{
+    border: 2px solid red;
     background: rgb(56, 119, 237);
 }
 
@@ -330,12 +333,16 @@ p{
     border: 1px solid black;
 }
 
+#fascia-blu-2{
+    background-color: cornflowerblue;
+    width: 100%;
+}
 
 #fascia-blu-2 .larghezza-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 80px 0;
 }
 
