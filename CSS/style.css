@@ -72,7 +72,7 @@ h2{
     width: 70%;
     margin-left:15%;
     /* debug */
-    background-color: rgb(0, 255, 51);
+    /* background-color: rgb(0, 255, 51); */
 }
 
 .prima-fascia-blu .sc-scritte{
@@ -107,7 +107,7 @@ p{
     width: 60vw;
     margin-left:20%;
     /* debug */
-    background-color: rgb(0, 255, 51);
+    /* background-color: rgb(0, 255, 51); */
 }
 
 .fatturazione{
@@ -317,7 +317,7 @@ p{
     
     /* DEBUG */
     background-color: rgb(223, 131, 20);
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .quarto{
@@ -330,10 +330,6 @@ p{
     border: 1px solid black;
 }
 
-#fascia-blu-2{
-    background-color: cornflowerblue;
-    width: 100%;
-}
 
 #fascia-blu-2 .larghezza-main{
     display: flex;
@@ -344,10 +340,6 @@ p{
 }
 
 
-#fascia-faq{
-    background-color: rgb(100, 237, 216);
-    width: 100%;
-}
 
 #fascia-faq .larghezza-main{
     /* display: flex;
@@ -357,11 +349,7 @@ p{
     padding: 5px 0;
 }
 
-#fascia-faq h4{
 
-    /* DEBUG */
-    background-color: azure;
-}
 
 
 .domanda{
@@ -372,7 +360,7 @@ p{
     padding: 20px 0;
 
     /* DEBUG */
-    background-color: azure;
+    /* background-color: azure; */
 
 }
 
@@ -387,35 +375,41 @@ footer{
     width: 100%;
 
     /* DEBUG */
-    /* height: 200px; */
-}
-
-footer .larghezza-top-bottom{
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
 }
 
 .colonna-footer{
     width: 15%;
 
-    margin-top: 20px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    color: white;
 
     display: flex;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    /* align-items: top; */
+    flex-flow: column;
+   
+    
 
     /* DEBUG */
-    background-color: blueviolet;
-    border: 1px solid white;
+    /* background-color: blueviolet; */
+    /* border: 1px solid white; */
     
 }
 
 .colonna-footer *{
     width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    
+    
+}
+
+
+.colonna-footer h4{
+    margin-bottom: 20px;
+    height: 20px;
+
+    /* DEBUG */
+   
+    /* border: 1px solid white; */
     
 }
 
@@ -423,7 +417,30 @@ footer .larghezza-top-bottom{
 
 .colonna-footer div{
     height: 15px;
-    /* margin-top: 10px; */
+
+    margin-top: 15px;
     
+}
+
+.lingua{
+    margin-top: 30px;
+    padding: 20px 0;
+    width: 100px;
+
+    border-top: 1px solid grey;
+    display:flex;
+    align-items: center;
+    color: grey;
+
+    
+    /* DEBUG */
+   
+    /* background-color: brown; */
+    
+}
+
+.lingua i{
+    margin: 5px;
+    font-size: 12px;
 }
 
