@@ -42,7 +42,7 @@ header > div{
 
 .bianco{
     color: grey;
-    background-color: aliceblue;
+    background-color: white;
     border: 1px solid grey;
 }
 
@@ -58,7 +58,7 @@ header > div{
 .prima-fascia-blu{
     margin-top: 5vh;
     background-color: rgb(140, 172, 231);
-    height: 610px;
+    height: 680px;
     
     box-sizing: border-box;
     border-bottom: 80px solid white;
@@ -66,6 +66,17 @@ header > div{
 
 h2{
     padding: 30px 0 20px;
+    font-size: 70px;
+    margin-bottom: 50px;
+
+    
+}
+
+
+
+h3{
+    padding: 30px 0 20px;
+    font-size: 40px;
 
     
 }
@@ -73,24 +84,53 @@ h2{
 
 
 
-.prima-fascia-blu h2{
-    font-size: 60px;
+
+
+h4{
+    font-size: 20px;
+    font-weight: 700;
+
+    
 }
 
 
-.prima-fascia-blu .sc-scritte{
-    width: 30%;
+
+
+
+
+
+.prima-fascia-blu .riga{
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.prima-fascia-blu .sc-scritte div{
+    display: flex;
+    justify-content: center;
+
+    /* DEBUG */
+    /* background-color: blueviolet; */
+
+}
+
+
+
+.prima-fascia-blu .tasto{
+    width: 130px;
 
 }
 
 p{
-    margin: 0 20px 20px 0;
+    margin:20px 0;
     font-size: 12px;
 }
 
 #jumbo{
-    height:auto;
-    width:70%;
+    height: 400px;
+    width:auto;
 }
 
 
@@ -190,14 +230,21 @@ p{
     margin-right: 5px;
 }
 
-
+/* questa section serve solo a centrare il tasto blu delle colonne */
 .colonna section{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 30px 0;
 
-    /* debug */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
+
+.colonna .tasto{
+    width: 130px;
+}
+
+
+
 
 .acquista-ora{
     display:flex;
@@ -208,7 +255,12 @@ p{
 }
 .oppure{
     border-bottom: 1px solid grey;
-    padding: 0 5px 20px;
+    padding-bottom: 20px;
+}
+
+.colonna a{
+    margin-left: 10px;
+    /* lo metto alla anchor e non all'oppure così che la linea sotto oppure stia solo sotto oppure */
 }
 
 
@@ -222,6 +274,9 @@ p{
     width: 100%;
     max-width: none;
     /* questo max-width serve a sovrascrivere la max-width delle altre */
+}
+.larghezza-main > .colonna .tasto{
+    padding: 10px;
 }
 
 #contatta-ufficio-vendite{
@@ -247,11 +302,11 @@ p{
 
 
 .fascia-img-scritte{
-    margin-bottom: 20px;
+    margin: 100px 0;
     
 
     /* DEBUG */
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 
@@ -264,18 +319,22 @@ p{
 
 
 #img{
-    width: 70%;
+    width: 60%;
+    height: auto;
 
     /* DEBUG */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 
 .fascia-img-scritte .sc-scritte{
 
     padding: 20px;
-    width:30%;
-    background-color: cadetblue;
+    width:calc(100% - 60%);
+    /* è scritto così con clac perché così posso 
+    cambiare la sua dimensione e quello dell'#img
+    contemporaneamente */
+    /* background-color: cadetblue; */
 }
 
 
@@ -288,16 +347,35 @@ p{
 
 }
 
+#fascia-operazioni {
+    margin: 100px 0;
+}
+
+#fascia-operazioni .riga{
+    margin: 40px 0;
+}
+
 
 .operazione{
     width:calc(100% / 3);
-    max-width: 250px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 
     /* DEBUG */
-    background-color: darksalmon;
-    border: 1px solid black;
-    height: 100px;
+    /* background-color: darksalmon; */
+    /* border: 1px solid black; */
+    /* height: 100px; */
 }
+
+.img-operazione{
+    width: 80%;
+    height: auto;
+    margin: 0 calc((100% - 80%) / 2) 20px;
+}
+
 
 .fascia-teams{
     margin-top:20px;
@@ -323,13 +401,20 @@ p{
     border: 1px solid red;
 }
 
+
 .quarto{
     width: calc(97vw / 6);
     /* se mettessi 100 andrebbe a capo */
     height: calc(100vw / 6);
+
+    padding: 10%;
+    object-fit: contain;
+
+    color: white;
+    /* non me li mette bianchi */
     
     /* DEBUG */
-    background-color: rgb(20, 145, 223);
+    background-color: rgb(223, 20, 20);
     border: 1px solid black;
 }
 
