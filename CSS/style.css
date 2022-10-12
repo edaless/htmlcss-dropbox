@@ -4,38 +4,30 @@
     box-sizing: border-box;
 }
 
-header{
-    position:fixed;
-    background-color: white;
-    padding: 0 20px;
-    width: 100vw;
-    height: 5vh;
-    margin-top: -5vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header > div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5vh;
-}
-
-
 
 
 .tasto{
-    padding: 4px 7px;
-    font-size: 10px;
+    padding: 10px 15px;
+    min-width: 80px;
+
+
+    font-size: 12px;
+    font-weight: 550;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* DEBUG */
+    /* background-color: aqua; */
 }
 
 
 .blu{
+    
+    font-size: 15px;
+    font-weight: 600;
     color: white;
     background-color: rgb(0, 102, 255);
 }
@@ -54,20 +46,10 @@ header > div{
     /* background-color: rgb(0, 255, 51); */
 }
 
-
-.prima-fascia-blu{
-    margin-top: 5vh;
-    background-color: rgb(140, 172, 231);
-    height: 680px;
-    
-    box-sizing: border-box;
-    border-bottom: 80px solid white;
-}
-
 h2{
     padding: 30px 0 20px;
     font-size: 70px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
     
 }
@@ -92,47 +74,141 @@ h4{
 
     
 }
+/* header */
+
+header{
+    position:fixed;
+    z-index: 500;
+
+
+    background-color: white;
 
 
 
+
+    padding: 0 20px;
+    width: 100vw;
+    height: 50px;
+    margin-top: -50px;
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+#logo{
+    width: 100px;
+
+    /* DEBUG */
+    /* background-color: aqua; */
+}
+
+
+
+p{
+    font-size: 20px;
+
+}
+
+
+
+/* .prima-fascia-blu //////////////////////////////////////////////////////////////////////////////*/
+.prima-fascia-blu{
+    margin-top: 50px;
+    background-color: rgb(140, 172, 231);
+    
+    /* height: 800px;
+    width: 2000px; */
+    
+    box-sizing: border-box;
+    border-bottom: 200px solid white;
+}
+
+.prima-fascia-blu h2{
+    max-height: 200px;
+    
+}
 
 
 
 
 .prima-fascia-blu .riga{
-    font-size: 70px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    
+    position:relative;
+    top: 90px;
+
+    
+
+
+
+
+    /* DEBUG */
+
+    /* background-color: coral; */
+
 }
+
+
+
+
+.prima-fascia-blu .sc-scritte{
+    
+    font-size: 70px;
+
+    width: 30%;
+    min-width: 200px;
+    height: 600px;
+    padding: 0 10px;
+
+    /* DEBUG */
+    /* background-color: blueviolet; */
+
+    /* background-color: chartreuse; */
+
+}
+
 
 
 
 
 .prima-fascia-blu .sc-scritte div{
+    /* questo div serve essenzialmente a evitare che il tasto prenda tutta la riga */
     display: flex;
-    justify-content: center;
+    margin: 50px 0;
 
-    /* DEBUG */
-    /* background-color: blueviolet; */
 
 }
 
-
+/* 
 
 .prima-fascia-blu .tasto{
-    width: 130px;
+    width: 30%;
+    margin: 0 calc((100% - 30%) / 2) 20px;
 
-}
+} */
 
-p{
-    margin:20px 0;
-    font-size: 12px;
-}
 
 #jumbo{
-    height: 400px;
-    width:auto;
+    /* immagine della .p fascia b */
+    height: 600px;
+    width: auto;
+
+
 }
 
+
+
+/* .fascia-colonne-riga ///////////////////////////////////////////////////////////////////////////// */
 
 
 .fascia-colonne-riga{
@@ -155,7 +231,8 @@ p{
 .fatturazione{
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 18px;
+    margin-top: 30px;
 }
 
 .cerchio{
@@ -169,11 +246,12 @@ p{
 }
 
 .cliccato{
-    border: 2px solid red;
-    background: rgb(56, 119, 237);
+    border: 3px solid rgb(56, 119, 237);
+    background: white;
 }
 
 .spazio-colonne{
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     
@@ -301,6 +379,7 @@ p{
 }
 
 
+/* fascia-img-scritte //////////////////////////////////////////////////////////////////////////////////*/
 .fascia-img-scritte{
     margin: 100px 0;
     
@@ -315,6 +394,12 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+.fascia-img-scritte p{
+    margin: 50px 0
 }
 
 
@@ -334,7 +419,7 @@ p{
     /* è scritto così con clac perché così posso 
     cambiare la sua dimensione e quello dell'#img
     contemporaneamente */
-    /* background-color: cadetblue; */
+
 }
 
 
@@ -346,7 +431,7 @@ p{
 
 
 }
-
+/* fascia operazioni//////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 #fascia-operazioni {
     margin: 100px 0;
 }
@@ -376,16 +461,16 @@ p{
     margin: 0 calc((100% - 80%) / 2) 20px;
 }
 
-
-.fascia-teams{
-    margin-top:20px;
+/* fascia teams///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#fascia-teams{
+    margin-top:150px;
 }
 
 #teams{
-    margin-top: 30px;
+    margin-top: 100px;
     display:flex;
     /* DEBUG */
-    background-color: bisque;
+    background-color: rgb(253, 247, 239);
 }
 
 .terzo{
@@ -397,8 +482,8 @@ p{
     flex-wrap: wrap;
     
     /* DEBUG */
-    background-color: rgb(223, 131, 20);
-    border: 1px solid red;
+    /* background-color: rgb(223, 131, 20); */
+    /* border: 1px solid red; */
 }
 
 
@@ -414,13 +499,71 @@ p{
     /* non me li mette bianchi */
     
     /* DEBUG */
-    background-color: rgb(223, 20, 20);
-    border: 1px solid black;
+    /* background-color: rgb(20, 223, 210); */
+    /* border: 1px solid black; */
 }
 
+
+
+.q1{
+    background: red;
+}
+.q2{
+    background: rgb(0, 136, 255);
+}
+.q3{
+    background: rgb(183, 255, 0);
+}
+.q4{
+    background: rgb(255, 153, 0);
+}
+.q5{
+    background: rgb(195, 0, 255);
+}
+.q6{
+    background: rgb(255, 0, 115);
+}
+.q7{
+    background: rgb(63, 143, 45);
+}
+.q8{
+    background: rgb(191, 167, 12);
+}
+
+.terzo div{
+    width: 90%;
+}
+
+
+#slide-show img{
+    width: 40%;
+
+    margin:  20px 0;
+    padding: 40px 0;
+    border-bottom: 1px solid grey;
+
+
+    /* DEBUG */
+    /* background-color: aqua; */
+}
+
+
+
+#slide-show p{
+    margin: 30px 0;
+}
+
+
+
+
+
+
+
+/* fascia blu 2///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 #fascia-blu-2{
     background-color: cornflowerblue;
     width: 100%;
+    height: 500px;
 }
 
 #fascia-blu-2 .larghezza-main{
@@ -431,7 +574,18 @@ p{
     padding: 80px 0;
 }
 
+#fascia-blu-2 h2{
+    width: 60%;
+    color: rgb(120, 9, 9);
 
+}
+
+#fascia-blu-2 .tasto{
+    width: 20%;
+
+}
+
+/* fascia faq///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #fascia-faq .larghezza-main{
     /* display: flex;
@@ -439,6 +593,10 @@ p{
     align-items: center; */
     margin-top: 30px;
     padding: 5px 0;
+}
+
+#fascia-faq h2{
+   margin: 50px 0;
 }
 
 
@@ -449,14 +607,14 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0;
 
     /* DEBUG */
     /* background-color: azure; */
 
 }
 
-
+/* footer ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer{
 
     margin-top: 20px;
