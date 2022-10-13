@@ -23,6 +23,11 @@
     /* background-color: aqua; */
 }
 
+.semplice{
+    height: 50px;
+    /* come l'header */
+}
+
 .semplice:hover{
     border-bottom: 1px solid black;
 }
@@ -45,6 +50,11 @@
     color: grey;
     background-color: white;
     border: 1px solid grey;
+}
+
+.bianco:hover{
+    color:rgb(255, 0, 115);
+    border: 1px solid rgb(255, 0, 115);
 }
 
 .larghezza-top-bottom{
@@ -326,11 +336,6 @@ p{
     /* background-color: aquamarine; */
 }
 
-.colonna .tasto{
-    width: 130px;
-}
-
-
 
 
 .acquista-ora{
@@ -478,7 +483,6 @@ p{
 #teams{
     margin-top: 100px;
     display:flex;
-    /* DEBUG */
     background-color: rgb(253, 247, 239);
 }
 
@@ -544,7 +548,13 @@ p{
 }
 
 
-#slide-show img{
+.slide-show {
+    position:relative;
+}
+
+
+
+.slide-show img{
     width: 40%;
 
     margin:  20px 0;
@@ -558,13 +568,74 @@ p{
 
 
 
-#slide-show p{
+.slide-show p{
     margin: 30px 0;
 }
 
 
 
+.ss1{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
 
+.ss2{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
+
+.ss3{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
+
+.ss4{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
+
+.ss5{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
+
+.ss6{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
+
+.ss7{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    display: none;
+}
+
+.ss8{
+    position:absolute;
+    background-color: rgb(253, 247, 239);
+    height: 100%;
+    /* display: none; */
+}
+
+.ss8:hover{
+    display: none;
+    /* background: #000; */
+    /* z-index: 10; */
+
+}
 
 
 

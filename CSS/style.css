@@ -531,6 +531,17 @@ p{
 }
 
 
+
+#slide-show {
+    overflow-y: scroll;
+    
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+
+}
+
+
+
 #slide-show img{
     width: 40%;
 
@@ -542,6 +553,7 @@ p{
     /* DEBUG */
     /* background-color: aqua; */
 }
+
 
 
 
