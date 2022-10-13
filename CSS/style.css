@@ -484,7 +484,7 @@ p{
 
 
 .quarto{
-    width: calc(97vw / 6);
+    width: calc(100vw / 6);
     /* se mettessi 100 andrebbe a capo */
     height: calc(100vw / 6);
 
@@ -535,7 +535,7 @@ p{
 #slide-show {
     overflow-y: scroll;
     
-    width: calc(100vw / 3);
+    width: calc(90vw / 3);
     height: calc(100vw / 3);
 
 }
