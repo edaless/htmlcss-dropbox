@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 
 
 .tasto{
@@ -11,8 +14,8 @@
     min-width: 80px;
 
 
-    font-size: 12px;
-    font-weight: 550;
+    font-size: 14px;
+    /* font-weight: 550; */
 
 
     display: flex;
@@ -26,10 +29,12 @@
 
 .blu{
     
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 600;
     color: white;
     background-color: rgb(0, 102, 255);
+
+    height: 60%;
 }
 
 .bianco{
@@ -38,17 +43,30 @@
     border: 1px solid grey;
 }
 
-.larghezza-top-bottom{
+
+.semplice{
+    color: grey;
+    margin: 0 2px;
     height: 100%;
-    width: 70%;
-    margin-left:15%;
+    /* DEBUG */
+    /* background-color: aquamarine; */
+}
+
+
+.larghezza-top-bottom{
+    /* height: 100%; */
+    width: 1400px;
+    margin-left:calc((100% - 1400px) / 2);
     /* debug */
     /* background-color: rgb(0, 255, 51); */
 }
 
 h2{
+    display: flex;
+    justify-content: center;
     padding: 30px 0 20px;
-    font-size: 70px;
+    font-size: 60px;
+    font-weight: bold;
     /* margin-bottom: 50px; */
 
     
@@ -74,6 +92,9 @@ h4{
 
     
 }
+
+
+
 /* header */
 
 header{
@@ -87,43 +108,44 @@ header{
 
 
     padding: 0 20px;
-    width: 100vw;
-    height: 50px;
-    margin-top: -50px;
+    width: 100%;
+
+    height: 70px;
+    margin-top: -70px;
+    /* devono essere uguali e uguali al margin top della prima fascia blu */
 
 
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+    /* DEBUG */
+    /* background-color: blueviolet; */
 }
 
 header > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
+    height: 100%;
 }
 
 #logo{
-    width: 100px;
-
-    /* DEBUG */
-    /* background-color: aqua; */
+    width: 130px;
+    margin-right: 20px;
 }
 
 
 
-p{
-    font-size: 20px;
-
-}
 
 
 
 /* .prima-fascia-blu //////////////////////////////////////////////////////////////////////////////*/
 .prima-fascia-blu{
-    margin-top: 50px;
+    margin-top: 70px;
+    /* deve essere uguale all'altezza dell'header */
     background-color: rgb(140, 172, 231);
     
     /* height: 800px;
@@ -142,19 +164,15 @@ p{
 
 
 .prima-fascia-blu .riga{
-    /* margin-bottom: 50px; */
-    
+    height: 600px;
+
+
     position:relative;
-    top: 90px;
+    top: 80px;
 
     
-
-
-
-
     /* DEBUG */
-
-    /* background-color: coral; */
+    /* background-color: rgb(43, 226, 55); */
 
 }
 
@@ -163,17 +181,23 @@ p{
 
 .prima-fascia-blu .sc-scritte{
     
-    font-size: 70px;
 
     width: 30%;
     min-width: 200px;
-    height: 600px;
+
+
+    height: 80%;
+    margin-bottom: calc(((100% - 80%) / 2) - 20px);
+
+
     padding: 0 10px;
+
+    font-size: 16px;
+    /* color: grey; */
+
 
     /* DEBUG */
     /* background-color: blueviolet; */
-
-    /* background-color: chartreuse; */
 
 }
 
@@ -189,19 +213,14 @@ p{
 
 }
 
-/* 
-
-.prima-fascia-blu .tasto{
-    width: 30%;
-    margin: 0 calc((100% - 30%) / 2) 20px;
-
-} */
-
 
 #jumbo{
     /* immagine della .p fascia b */
-    height: 600px;
+    height: 100%;
     width: auto;
+    
+    /* DEBUG */
+    /* background-color: blueviolet; */
 
 
 }
@@ -261,11 +280,12 @@ p{
 .colonna{
     border: 1px solid grey;
     width: 33%;
-    max-width: 250px;
+    max-width: 300px;
     
 }
 
 .tipo{
+    font-size: 18px;
     border-bottom: 1px solid grey;
     text-align: center;
 }
@@ -349,14 +369,17 @@ p{
     max-width: none;
     /* questo max-width serve a sovrascrivere la max-width delle altre */
 }
-.larghezza-main > .colonna .tasto{
-    padding: 10px;
+.larghezza-main > .colonna .sc-scritte{
+    padding: 0 20px
 }
 
+
 #contatta-ufficio-vendite{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
+    
 }
 
 .riga{
@@ -371,7 +394,9 @@ p{
 
 .colonna p{
     width: 70%;
-    color: grey;
+    font-weight: 200;
+    /* color: grey; */
+    margin-bottom: 10px;
 }
 
 
@@ -477,16 +502,12 @@ p{
     justify-content: center;
     flex-wrap: wrap;
     
-    /* DEBUG */
-    /* background-color: rgb(223, 131, 20); */
-    /* border: 1px solid red; */
 }
 
 
 .quarto{
-    width: calc(100vw / 6);
-    /* se mettessi 100 andrebbe a capo */
-    height: calc(100vw / 6);
+    width: 50%;
+    height: 50%;
 
     padding: 10%;
     object-fit: contain;
@@ -494,9 +515,6 @@ p{
     color: white;
     /* non me li mette bianchi */
     
-    /* DEBUG */
-    /* background-color: rgb(20, 223, 210); */
-    /* border: 1px solid black; */
 }
 
 
